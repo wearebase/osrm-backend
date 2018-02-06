@@ -9,7 +9,8 @@
     "nan": "^2.6.2",
     "node-cmake": "^2.3.2",
     "node-pre-gyp": "^0.6.36",
-    "osmtogeojson": "^3.0.0-beta.3"
+    "osmtogeojson": "^3.0.0-beta.3",
+    "xmldoc": "^1.1.0"
   },
   "browserify": {
     "transform": [
