@@ -457,12 +457,6 @@ function process_turn(profile, turn)
     end
   end
 
-  -- penalize leaving the motorway to prevent divebombs
-  -- we want to prevent divebombs whether we route based on distance or duration
-  if source_is_motorway == true and target_is_motorway == true then
-     turn.weight = turn.weight * 2 + 300  -- @CHAUTODO #arbitrarynumber
-  end
-
   -- for distance based routing we don't want to have penalties based on turn angle
   if profile.properties.weight_name == 'distance' then
      turn.weight = 0
